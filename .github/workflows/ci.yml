@@ -1,0 +1,22 @@
+name: Main
+# This workflow is triggered on pushes to the repository.
+on: [push]
+
+jobs:
+  build:
+    name: Docker
+    strategy:
+      matrix:
+        php_version: ['7.1', '7.2', '7.3']
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Build
+      run: docker build --build-arg VERSION=${{ matrix.php_version }} -t nauxliu/php-ci-image:${{ matrix.php_version }} .
+    - name: Login
+      run: docker login -u $DOCKER_USER -p $DOCKER_PASS
+      env:
+        DOCKER_USER: ${{ secrets.DOCKER_USER }}
+        DOCKER_PASS: ${{ secrets.DOCKER_PASS }}
+    - name: Publish
+      run: docker push nauxliu/php-ci-image:${{ matrix.php_version }}
