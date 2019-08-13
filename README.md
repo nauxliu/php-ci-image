@@ -16,6 +16,8 @@ Use `docker pull nauxliu/php-ci-image` to pull these images.
 
 The following tags are available:
 
+* 7.0
 * 7.1
 * 7.2
 * 7.3
+* 7.4.0beta2
