@@ -1,5 +1,7 @@
 # PHP CI Docker images
 
+[![Build Status](https://wdp9fww0r9.execute-api.us-west-2.amazonaws.com/production/badge/nauxliu/php-ci-image)](https://wdp9fww0r9.execute-api.us-west-2.amazonaws.com/production/results/nauxliu/php-ci-image) 
+
 This repository is based on the [official PHP Docker images](https://hub.docker.com/_/php) with the following additions:
 
 * git
