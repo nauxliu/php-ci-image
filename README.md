@@ -1,10 +1,14 @@
 # PHP CI Docker images
 
-This images contain the following additions to the vanilla PHP images:
+This repository is based on the [official PHP Docker images](https://hub.docker.com/_/php) with the following additions:
 
 * git
 * composer
 * unzip
+
+### Build schedule
+
+Every day
 
 ### Usage
 

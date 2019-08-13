@@ -1,13 +1,21 @@
 name: Main
 # This workflow is triggered on pushes to the repository.
-on: [push]
+on:
+  push:
+    branches:
+    - master
+  schedule:
+    - cron:  0 0 * * *
 
 jobs:
   build:
     name: Docker
     strategy:
       matrix:
-        php_version: ['7.1', '7.2', '7.3']
+        php_version: 
+          - 7.1
+          - 7.2
+          - 7.3
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
