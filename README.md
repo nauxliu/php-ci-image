@@ -1,6 +1,6 @@
 # PHP CI Docker images
 
-[![Build Status](https://wdp9fww0r9.execute-api.us-west-2.amazonaws.com/production/badge/nauxliu/php-ci-image)](https://wdp9fww0r9.execute-api.us-west-2.amazonaws.com/production/results/nauxliu/php-ci-image) 
+[![Build Status](https://github.com/nauxliu/php-ci-image/workflows/Main/badge.svg)](https://github.com/nauxliu/php-ci-image/actions) 
 [![Pull count](https://img.shields.io/docker/pulls/nauxliu/php-ci-image.svg)](https://cloud.docker.com/u/nauxliu/repository/docker/nauxliu/php-ci-image) 
 [![LICENSE](https://img.shields.io/github/license/nauxliu/php-ci-image)](https://github.com/nauxliu/php-ci-image/blob/master/LICENSE) 
 
