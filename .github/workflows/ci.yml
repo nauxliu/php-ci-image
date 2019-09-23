@@ -27,5 +27,9 @@ jobs:
       env:
         DOCKER_USER: ${{ secrets.DOCKER_USER }}
         DOCKER_PASS: ${{ secrets.DOCKER_PASS }}
-    - name: Publish
+    - name: Publish DockerHub
       run: docker push nauxliu/php-ci-image:${{ matrix.php_version }}
+    - name: Publish GitHub
+      run: |
+        docker tag nauxliu/php-ci-image:${{ matrix.php_version }} docker.pkg.github.com/nauxliu/php-ci-image:${{ matrix.php_version }} 
+        docker push docker.pkg.github.com/nauxliu/php-ci-image:${{ matrix.php_version }} 
