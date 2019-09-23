@@ -11,4 +11,4 @@ RUN set -xe \
     && php composer-setup.php --install-dir /usr/local/bin --filename composer \
     && php -r "unlink('composer-setup.php');" \
     # Copy default php.ini
-    && cp /usr/local/etc/php/php.ini-development /usr/local/etc/php/php.ini 
+    && cp /usr/local/etc/php/php.ini-development /usr/local/etc/php/php.ini
