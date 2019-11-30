@@ -25,4 +25,4 @@ The following tags are available:
 * 7.1
 * 7.2
 * 7.3
-* 7.4-rc
+* 7.4
