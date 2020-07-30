@@ -13,7 +13,7 @@ This repository is based on the [official PHP Docker images](https://hub.docker.
 
 ### Build schedule
 
-Every day
+Every week
 
 ### Usage
 
@@ -26,3 +26,4 @@ The following tags are available:
 * 7.2
 * 7.3
 * 7.4
+* 8.0-rc
