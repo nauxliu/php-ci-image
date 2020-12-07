@@ -26,4 +26,4 @@ The following tags are available:
 * 7.2
 * 7.3
 * 7.4
-* 8.0-rc
+* 8.0
